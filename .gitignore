@@ -1,0 +1,8 @@
+backend/.venv
+backend/__pycache__/
+backend/migrations/
+backend/app/__pycache__/
+
+# i want to remove app __pycache__ 
+
+notebooks/.ipynb_checkpoints/
