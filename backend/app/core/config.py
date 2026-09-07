@@ -11,7 +11,7 @@ class Settings(BaseSettings):
 
     FRONTEND_URL: str = "http://localhost:5173"
 
-    MODEL_PATH: str = str(BASE_DIR / "model" / "machine_failure_pipeline.pkl")
+    MODEL_PATH: str = str(BASE_DIR / "model" / "machine_failure_pipeline_DT.pkl")
 
 
 settings = Settings()
