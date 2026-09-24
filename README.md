@@ -2,8 +2,6 @@
 
 A full-stack predictive maintenance application for milling machines. This app uses a pre-trained machine learning model to predict whether a machine is likely to fail based on real-time sensor telemetry.
 
-**Important Note:** This codebase does NOT contain any training code or logic. It is strictly an inference server and a frontend dashboard.
-
 ## Project Structure
 
 - `backend/` - FastAPI backend server
@@ -65,15 +63,6 @@ The frontend is a modern React application built with Vite and Tailwind CSS.
    ```
 4. Open your browser and navigate to `http://localhost:5173` (or the URL provided in the terminal).
 
-## Testing
-
-### Backend Unit Tests
-
-Run the test suite using pytest:
-```bash
-cd backend
-python -m pytest tests/ -v
-```
 
 ## Features Used for Prediction
 
@@ -85,4 +74,3 @@ The model uses only the following 6 features:
 - `Torque [Nm]`
 - `Tool wear [min]`
 
-Columns such as `TWF`, `HDF`, `PWF`, `OSF`, `RNF`, `UDI`, and `Product ID` are strictly excluded from the inference pipeline.
